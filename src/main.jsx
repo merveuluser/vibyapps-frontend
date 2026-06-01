@@ -4,10 +4,11 @@ import './styles.css'
 
 const apps = [
   {
-    name: 'Tiny Wins',
-    category: 'Daily momentum',
-    status: 'Idea lab',
-    description: 'A gentle tracker for small habits, good moods, and tiny streaks.'
+    name: 'Mood Capsule',
+    category: 'Mood journaling',
+    status: 'In progress',
+    logo: '/moodcapsule_logo.png',
+    description: 'Seal a mood note for your future self, then unlock it later with a reminder.'
   },
   {
     name: 'Pocket Muse',
@@ -83,9 +84,12 @@ function App() {
       <section className="app-grid" aria-label="Viby app list">
         {apps.map((app) => (
           <article className="app-card" key={app.name}>
-            <div>
-              <p>{app.category}</p>
-              <h3>{app.name}</h3>
+            <div className="app-card-header">
+              {app.logo && <img className="app-logo" src={app.logo} alt={`${app.name} logo`} />}
+              <div>
+                <p>{app.category}</p>
+                <h3>{app.name}</h3>
+              </div>
             </div>
             <p className="description">{app.description}</p>
             <span>{app.status}</span>

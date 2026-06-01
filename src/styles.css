@@ -272,7 +272,21 @@ h2 {
   box-shadow: 6px 6px 0 rgba(23, 33, 31, 0.95);
 }
 
-.app-card p:first-child,
+.app-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-logo {
+  width: clamp(54px, 6vw, 72px);
+  height: clamp(54px, 6vw, 72px);
+  flex: 0 0 auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.app-card-header p,
 .app-card span {
   color: #e5553b;
   font-size: 0.78rem;
