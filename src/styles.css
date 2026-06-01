@@ -1,6 +1,6 @@
 :root {
-  color: #17211f;
-  background: #f6f2e8;
+  color: #191034;
+  background: #fff4f8;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -22,9 +22,10 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 16% 18%, rgba(252, 111, 88, 0.18), transparent 28rem),
-    radial-gradient(circle at 88% 12%, rgba(57, 150, 136, 0.2), transparent 25rem),
-    linear-gradient(135deg, #fff9ee 0%, #f2f0e8 46%, #e8f2ed 100%);
+    linear-gradient(115deg, rgba(255, 71, 132, 0.2) 0 12%, transparent 12% 34%),
+    linear-gradient(150deg, transparent 0 38%, rgba(35, 204, 255, 0.18) 38% 52%, transparent 52%),
+    linear-gradient(28deg, rgba(255, 190, 68, 0.22) 0 18%, transparent 18% 60%),
+    linear-gradient(135deg, #fff7fb 0%, #fff1d8 42%, #dcfbff 100%);
 }
 
 a {
@@ -65,9 +66,9 @@ main {
 
 .nav-links {
   gap: 18px;
-  color: #4d5c55;
+  color: #2a1a5f;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .hero {
@@ -85,7 +86,7 @@ main {
 
 .eyebrow {
   margin: 0 0 12px;
-  color: #e5553b;
+  color: #ff347e;
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -102,14 +103,16 @@ p {
 h1 {
   max-width: 780px;
   margin-bottom: 20px;
+  color: #1b0f3d;
   font-size: clamp(3rem, 8vw, 7.2rem);
   line-height: 0.94;
+  text-shadow: 0.05em 0.05em 0 rgba(49, 218, 232, 0.18);
 }
 
 .intro {
   max-width: 620px;
   margin-bottom: 30px;
-  color: #47574f;
+  color: #493f68;
   font-size: clamp(1.08rem, 2vw, 1.35rem);
 }
 
@@ -123,19 +126,21 @@ h1 {
   min-height: 48px;
   align-items: center;
   justify-content: center;
-  border: 2px solid #17211f;
+  border: 2px solid #21114f;
   border-radius: 999px;
   padding: 0 22px;
   font-weight: 900;
+  box-shadow: 5px 5px 0 #21114f;
 }
 
 .button.primary {
-  background: #17211f;
+  background: linear-gradient(120deg, #ff347e, #ffb53f 52%, #29d4d8);
   color: #fffaf0;
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, 0.46);
+  background: rgba(255, 255, 255, 0.72);
+  color: #21114f;
 }
 
 .phone-stage {
@@ -147,10 +152,12 @@ h1 {
   position: relative;
   width: min(340px, 84vw);
   aspect-ratio: 0.52;
-  border: 12px solid #151b1a;
+  border: 12px solid #21114f;
   border-radius: 46px;
-  background: #151b1a;
-  box-shadow: 22px 30px 0 rgba(23, 33, 31, 0.13);
+  background: #21114f;
+  box-shadow:
+    18px 24px 0 rgba(33, 17, 79, 0.16),
+    -12px -12px 0 rgba(255, 52, 126, 0.18);
   transform: rotate(4deg);
 }
 
@@ -162,7 +169,7 @@ h1 {
   width: 94px;
   height: 24px;
   border-radius: 999px;
-  background: #151b1a;
+  background: #21114f;
   transform: translateX(-50%);
 }
 
@@ -176,14 +183,14 @@ h1 {
   padding: 56px 22px 24px;
   background:
     linear-gradient(160deg, rgba(255, 255, 255, 0.45), transparent 44%),
-    linear-gradient(145deg, #f9d35a 0%, #fb755f 45%, #399688 100%);
+    linear-gradient(145deg, #ff347e 0%, #ffb53f 36%, #22b8ff 68%, #2de6c8 100%);
 }
 
 .app-chip,
 .pulse-card,
 .dock {
-  border: 2px solid rgba(23, 33, 31, 0.9);
-  background: rgba(255, 250, 240, 0.74);
+  border: 2px solid rgba(33, 17, 79, 0.92);
+  background: rgba(255, 255, 255, 0.74);
   backdrop-filter: blur(12px);
 }
 
@@ -198,11 +205,11 @@ h1 {
 .pulse-card {
   border-radius: 26px;
   padding: 22px;
-  box-shadow: 8px 8px 0 rgba(23, 33, 31, 0.88);
+  box-shadow: 8px 8px 0 rgba(33, 17, 79, 0.9);
 }
 
 .pulse-card span {
-  color: #59635f;
+  color: #5b4c7c;
   font-size: 0.82rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -210,7 +217,7 @@ h1 {
 
 .pulse-card strong {
   display: block;
-  color: #17211f;
+  color: #21114f;
   font-size: 5.8rem;
   line-height: 0.95;
 }
@@ -223,9 +230,9 @@ h1 {
 
 .mini-grid span {
   min-height: 68px;
-  border: 2px solid rgba(23, 33, 31, 0.75);
+  border: 2px solid rgba(33, 17, 79, 0.75);
   border-radius: 18px;
-  background: rgba(255, 250, 240, 0.48);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .dock {
@@ -240,7 +247,7 @@ h1 {
   width: 34px;
   height: 34px;
   border-radius: 12px;
-  background: #17211f;
+  background: linear-gradient(135deg, #ff347e, #2de6c8);
 }
 
 .section-head {
@@ -265,11 +272,13 @@ h2 {
   min-height: 270px;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid #17211f;
+  border: 2px solid #21114f;
   border-radius: 8px;
   padding: 22px;
-  background: rgba(255, 250, 240, 0.64);
-  box-shadow: 6px 6px 0 rgba(23, 33, 31, 0.95);
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.88), rgba(255, 247, 251, 0.58)),
+    linear-gradient(120deg, rgba(255, 52, 126, 0.14), rgba(255, 181, 63, 0.12), rgba(45, 230, 200, 0.16));
+  box-shadow: 7px 7px 0 rgba(33, 17, 79, 0.95);
 }
 
 .app-card-header {
@@ -282,13 +291,15 @@ h2 {
   width: clamp(54px, 6vw, 72px);
   height: clamp(54px, 6vw, 72px);
   flex: 0 0 auto;
+  border: 2px solid #21114f;
   border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
   object-fit: contain;
 }
 
 .app-card-header p,
 .app-card span {
-  color: #e5553b;
+  color: #ff347e;
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -297,12 +308,13 @@ h2 {
 
 .app-card h3 {
   margin-bottom: 0;
+  color: #21114f;
   font-size: 1.75rem;
   line-height: 1;
 }
 
 .app-card .description {
-  color: #4d5c55;
+  color: #493f68;
   font-size: 1rem;
 }
 
