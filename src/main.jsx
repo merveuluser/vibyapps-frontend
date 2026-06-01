@@ -28,8 +28,7 @@ function App() {
     <main>
       <nav className="nav" aria-label="Primary navigation">
         <a className="brand" href="/" aria-label="Viby Apps home">
-          <span className="brand-mark">V</span>
-          <span>Viby Apps</span>
+          <img className="brand-logo" src="/vibyapps_logo.png" alt="Viby Apps logo" />
         </a>
         <div className="nav-links">
           <a href="#apps">Apps</a>
