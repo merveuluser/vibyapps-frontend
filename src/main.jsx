@@ -7,19 +7,21 @@ const apps = [
     name: 'Mood Capsule',
     category: 'Mood journaling',
     status: 'In progress',
-    logo: '/moodcapsule_logo.png',
+    logo: '/moodcapsule_placeholder_logo.png',
     description: 'Seal a mood note for your future self, then unlock it later with a reminder.'
   },
   {
     name: 'Pocket Muse',
     category: 'Creative prompts',
     status: 'Sketching',
+    logo: '/pocketmuse_logo.png',
     description: 'Quick sparks for notes, reels, captions, side quests, and half-formed ideas.'
   },
   {
     name: 'Soft Focus',
     category: 'Mindful utility',
     status: 'Coming soon',
+    logo: '/softfocus_logo.png',
     description: 'A calmer timer for deep work, breaks, and returning to the thing.'
   }
 ]
@@ -84,10 +86,10 @@ function App() {
       <section className="app-grid" aria-label="Viby app list">
         {apps.map((app) => (
           <article className="app-card" key={app.name}>
-            <div className="app-card-header">
-              {app.logo && <img className="app-logo" src={app.logo} alt={`${app.name} logo`} />}
-              <div>
-                <p>{app.category}</p>
+            <div className="app-card-top">
+              <p>{app.category}</p>
+              <div className="app-card-header">
+                {app.logo && <img className="app-logo" src={app.logo} alt={`${app.name} logo`} />}
                 <h3>{app.name}</h3>
               </div>
             </div>
